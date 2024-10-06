@@ -9,7 +9,7 @@ function goTo(route) {
 
 <template>
     <div class="header">
-      <h1>Groups</h1>
+      <h1 class="title">Groups</h1>
       <div id="pages">
         <button @click="goTo('/')">Home</button>
         <button @click="goTo('/about')">About Us</button>
@@ -22,20 +22,5 @@ function goTo(route) {
 
 
 
-<style scoped>
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#pages {
-  display: flex;
-  gap: 10px;
-}
-button {
-  padding: 10px;
-  border: 1px solid #ccc;
-  cursor: pointer;
-}
-</style>
+
 

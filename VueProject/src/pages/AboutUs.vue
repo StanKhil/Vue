@@ -9,7 +9,7 @@ function goTo(route) {
 
 <template>
     <div class="header">
-      <h1>About Us</h1>
+      <h1 class="title">About Us</h1>
       <div id="pages">
         <button @click="goTo('/')">Home</button>
         <button @click="goTo('/about')">About Us</button>
@@ -17,24 +17,17 @@ function goTo(route) {
         <button @click="goTo('/profile')">Profile</button>
       </div>
     </div>
+    <div class="main">
+        <p>about us</p>
+    </div>
     <RouterView />
 </template>
 
-
-
-<style scoped>
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#pages {
-  display: flex;
-  gap: 10px;
-}
-button {
-  padding: 10px;
-  border: 1px solid #ccc;
-  cursor: pointer;
+<style>
+.main{
+    padding-left: 10px;
+    border:solid gold 2px;
+    padding-bottom: 400px;
 }
 </style>
+
