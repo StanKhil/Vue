@@ -18,16 +18,12 @@ function goTo(route) {
       </div>
     </div>
     <div class="main">
-        <p>about us</p>
+        <h2>about us</h2>
     </div>
     <RouterView />
 </template>
 
 <style>
-.main{
-    padding-left: 10px;
-    border:solid gold 2px;
-    padding-bottom: 400px;
-}
+
 </style>
 

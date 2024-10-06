@@ -1,10 +1,18 @@
 <script setup>
 import { useRouter } from 'vue-router'
+import {ref , reactive} from 'vue'
 const router = useRouter()
 
 function goTo(route) {
     router.push(route)
 }
+
+/*let group = reactive({
+    title:"group1"
+})
+let groups=new Array()
+groups.push(group)*/
+
 </script>
 
 <template>
@@ -16,6 +24,14 @@ function goTo(route) {
         <button @click="goTo('/groups')">Groups</button>
         <button @click="goTo('/profile')">Profile</button>
       </div>
+    </div>
+    <div class="main">
+        <h2>Your groups:</h2>
+        <div class="listGroups">
+            <li  v-for="group in groups">
+                {{ item.title }}
+            </li>
+        </div>
     </div>
     <RouterView />
 </template>

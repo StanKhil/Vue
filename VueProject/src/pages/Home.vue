@@ -42,7 +42,12 @@ button {
   background-color: #376ec2;
 }
 .title{
-    padding-left: 10px;
+    padding-left: 50px;
     color:white;
+}
+.main{
+    padding-left: 10px;
+    border:solid gold 2px;
+    padding-bottom: 400px;
 }
 </style>
