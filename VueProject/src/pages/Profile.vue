@@ -9,16 +9,16 @@ function goTo(route) {
 
 <template>
     <div class="header">
-      <h1>Home</h1>
+      <h1>Profile</h1>
       <div id="pages">
         <button @click="goTo('/')">Home</button>
         <button @click="goTo('/about')">About Us</button>
         <button @click="goTo('/groups')">Groups</button>
-        <button @click="goTo('/profile')">Profile</button>
       </div>
     </div>
     <RouterView />
 </template>
+
 
 
 <style scoped>

@@ -9,7 +9,7 @@ function goTo(route) {
 
 <template>
     <div class="header">
-      <h1>Home</h1>
+      <h1>Groups</h1>
       <div id="pages">
         <button @click="goTo('/')">Home</button>
         <button @click="goTo('/about')">About Us</button>
@@ -19,6 +19,7 @@ function goTo(route) {
     </div>
     <RouterView />
 </template>
+
 
 
 <style scoped>
@@ -37,3 +38,4 @@ button {
   cursor: pointer;
 }
 </style>
+
