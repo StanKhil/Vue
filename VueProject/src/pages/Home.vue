@@ -5,6 +5,7 @@ const router = useRouter()
 function goTo(route) {
     router.push(route)
 }
+//#376ec2
 </script>
 
 <template>
@@ -39,15 +40,17 @@ button {
   border: 1px solid #ccc;
   cursor: pointer;
   color:white;
-  background-color: #376ec2;
+  background-color:#5083cf; 
+  &:hover{background-color:#376ec2 ;}
 }
 .title{
     padding-left: 50px;
     color:white;
 }
 .main{
+    margin-top: 40px;
     padding-left: 10px;
-    border:solid gold 2px;
+    border:solid rgb(48, 47, 45) 2px;
     padding-bottom: 400px;
 }
 </style>
