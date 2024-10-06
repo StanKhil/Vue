@@ -9,7 +9,7 @@ function goTo(route) {
 
 <template>
     <div class="header">
-      <h1 class="title">About Us</h1>
+      <h1 class="title">About Us sahhaaa</h1>
       <div id="pages">
         <button @click="goTo('/')">Home</button>
         <button @click="goTo('/about')">About Us</button>
