@@ -7,11 +7,11 @@ import Profile from './pages/Profile.vue'
 import Login from './pages/Login.vue'
 
 const routes = [
-  { path: '/', component: Home },
+  { path: '/', component: Login },
   { path: '/about', component: AboutUs },
   { path: '/groups', component: Groups },
   { path: '/profile', component: Profile },
-  { path: '/login', component: Login },
+  { path: '/home', component: Home },
 ]
 
 const router = createRouter({

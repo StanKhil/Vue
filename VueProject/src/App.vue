@@ -1,6 +1,10 @@
 <script setup>
+/*(import { useRouter } from 'vue-router'
+const router = useRouter()
 
-
+function goTo(route) {
+    router.push(route)
+}*/
 </script>
 
 <template>
@@ -8,6 +12,4 @@
 </template>
 
 <style scoped>
-
-
 </style>

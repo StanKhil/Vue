@@ -2,17 +2,20 @@
 import {ref,reactive} from 'vue'
 let login=ref("")
 let password=ref("")
-
+import { useRouter } from 'vue-router'
+const router = useRouter()
 
 
 function EnterData(){
     console.log(login.value + " " + password.value)
+    router.push('/home')
+    
 }
 </script>
 
 <template>
     <div class="head">
-        <h1>Login</h1>
+        <h1 class="title">Login</h1>
     </div>
     <div class="main">
         <input v-model="login" placeholder="Enter your login">
@@ -41,5 +44,9 @@ input{
 }
 button{
     margin: 15px 300px;
+}
+.title{
+    padding-left: 50px;
+    color:white;
 }
 </style>

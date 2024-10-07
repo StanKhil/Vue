@@ -1,11 +1,10 @@
 <script setup>
-import { useRouter } from 'vue-router'
-import {ref , reactive} from 'vue'
-const router = useRouter()
+import HeaderComponent from '@/components/HeaderComponent.vue'
 
-function goTo(route) {
-    router.push(route)
-}
+import {ref , reactive} from 'vue'
+import { useGoTo } from '@/useGoTo'
+
+const { goTo } = useGoTo()
 
 let group = reactive({
     title:"group1"
@@ -20,15 +19,8 @@ groups.push(group2)
 </script>
 
 <template>
-    <div class="header">
-      <h1 class="title">Groups</h1>
-      <div id="pages">
-        <button @click="goTo('/')">Home</button>
-        <button @click="goTo('/about')">About Us</button>
-        <button @click="goTo('/groups')">Groups</button>
-        <button @click="goTo('/profile')">Profile</button>
-      </div>
-    </div>
+    <HeaderComponent title="Groups" >
+    </HeaderComponent>
     <div class="main">
         <h2>Your groups:</h2>
         <div class="listGroups">

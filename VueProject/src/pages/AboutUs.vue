@@ -1,23 +1,11 @@
 <script setup>
-import { useRouter } from 'vue-router'
-const router = useRouter()
-
-function goTo(route) {
-    router.push(route)
-}
+import HeaderComponent from '@/components/HeaderComponent.vue'
 </script>
 
 <template>
-    <div class="header">
-      <h1 class="title">About Us sahhaaa</h1>
-      <div id="pages">
-        <button @click="goTo('/')">Home</button>
-        <button @click="goTo('/about')">About Us</button>
-        <button @click="goTo('/groups')">Groups</button>
-        <button @click="goTo('/profile')">Profile</button>
-      </div>
-    </div>
-    <div class="main">
+    <HeaderComponent title="About Us">
+    </HeaderComponent>
+     <div class="main">
         <h2>about us</h2>
     </div>
     <RouterView />
