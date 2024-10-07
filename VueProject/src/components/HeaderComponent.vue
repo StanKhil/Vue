@@ -17,6 +17,7 @@ const { goTo } = useGoTo()
         <button @click="goTo('/home')">Home</button>
         <button @click="goTo('/about')">About Us</button>
         <button @click="goTo('/groups')">Groups</button>
+        <button @click="goTo('/problems')">Problems</button>
         <button @click="goTo('/profile')">Profile</button>
       </div>
     </div>
